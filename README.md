@@ -15,7 +15,9 @@ To start backend for account authentification (unfinished):
 - Go to http://localhost:8888/login
 => This part is to view an account's playlists. Client ID and secret can be obtained here: https://developer.spotify.com/dashboard/login
 
+
 ____________________________________________________________
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
