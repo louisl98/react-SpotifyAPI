@@ -91,7 +91,7 @@ class App extends Component {
                     const albums = json.items;
                     this.setState({ albums });
                                     }
-                                })                               
+                                })           
                         }
                     
 

@@ -22,7 +22,7 @@ class Albums extends Component {
                         <div className="info">
                             <p>Release date: {album.release_date}</p>
                             <p>Total tracks: {album.total_tracks}</p>
-                            <a target="_blank" href={album.external_urls.spotify}>View on Spotify</a>
+                            <a rel="noopener noreferrer" target="_blank" href={album.external_urls.spotify}>View on Spotify</a>
                         </div>
                         <div className="tracks">    
                             <Tracks 

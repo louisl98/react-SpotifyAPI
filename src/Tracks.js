@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Howl} from 'howler';
 class Tracks extends Component {
 
     constructor(props) {
@@ -54,13 +55,22 @@ class Tracks extends Component {
         render(){
 
         const tracks = this.state.tracks.map(track => (
+            
             <li>
                 <h4><span>▶</span> {track.name} </h4> 
 
                 <p>({Math.floor(track.duration_ms / 60000) + ":" + (((track.duration_ms % 60000) / 1000).toFixed(0) < 10 ? '0' : '') + ((track.duration_ms % 60000) / 1000).toFixed(0)})</p>
             </li>
-                ));            
-
+                ));  
+              
+                const sound = new Howl({
+                    src: ["test.mp3"],
+                    preload: true,
+                    autoplay: true
+                });
+        
+                sound.play();
+            
         return(         
 
             <ul>
