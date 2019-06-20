@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {Howl} from 'howler';
+// import {Howl} from 'howler';
+
 class Tracks extends Component {
 
     constructor(props) {
@@ -34,7 +35,7 @@ class Tracks extends Component {
 
         let FETCH_URL = `https://api.spotify.com/v1/albums/${this.props.albumId}/tracks`;
      
-        fetch(FETCH_URL, {method: 'GET',
+        await fetch(FETCH_URL, {method: 'GET',
         headers: {
             'Authorization': 'Bearer ' + this.state.accessToken
         },
@@ -57,22 +58,28 @@ class Tracks extends Component {
         const tracks = this.state.tracks.map(track => (
             
             <li>
-                <h4><span>▶</span> {track.name} </h4> 
+                <h4 id="track"><a href={track.preview_url}><span>▶</span> {track.name} </a></h4> 
 
                 <p>({Math.floor(track.duration_ms / 60000) + ":" + (((track.duration_ms % 60000) / 1000).toFixed(0) < 10 ? '0' : '') + ((track.duration_ms % 60000) / 1000).toFixed(0)})</p>
             </li>
                 ));  
-              
-                const sound = new Howl({
-                    src: ["test.mp3"],
-                    preload: true,
-                    autoplay: true
-                });
         
-                sound.play();
+                
+/* 
+mp3 direct links only for howler, embedded player preview link not supported
+
+        const sound = new Howl({
+            src: [{track.preview_url}],
+            preload: true,
+            autoplay: true
+        });
+
+        document.getElementById(track).addEventListener("click", function() {
+            sound.play();
+        });
+*/
             
         return(         
-
             <ul>
                 {tracks}
             </ul>
