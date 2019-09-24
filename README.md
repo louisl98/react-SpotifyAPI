@@ -1,17 +1,17 @@
-To start app:
+**To start app:**
 
-- cd spotify-search
-- npm install
-- npm start
+```cd spotify-search```
+```npm install```
+```npm start```
 - Go to http://localhost:3000/
 
-To start backend for account authentification (unfinished):
+**To start backend for account authentification (unfinished):**
 
-- cd auth
-- npm install
-- export SPOTIFY_CLIENT_ID = aValidToken
-- export SPOTIFY_CLIENT_SECRET= aValidToken
-- npm start
+```cd auth```
+```npm install```
+```export SPOTIFY_CLIENT_ID = aValidToken```
+```export SPOTIFY_CLIENT_SECRET= aValidToken```
+```npm start```
 - Go to http://localhost:8888/login
 => This part is to view an account's playlists. Client ID and secret can be obtained here: https://developer.spotify.com/dashboard/login
 
