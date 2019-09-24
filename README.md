@@ -14,9 +14,9 @@
 
 ```npm install```
 
-```export SPOTIFY_CLIENT_ID = aValidToken```
+```export SPOTIFY_CLIENT_ID = yourValidToken```
 
-```export SPOTIFY_CLIENT_SECRET= aValidToken```
+```export SPOTIFY_CLIENT_SECRET= yourValidToken```
 
 ```npm start```
 
