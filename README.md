@@ -6,7 +6,7 @@
 
 ```npm start```
 
-- Go to http://localhost:3000/
+- http://localhost:3000/
 
 **To start backend for account authentification (unfinished):**
 
@@ -20,7 +20,7 @@
 
 ```npm start```
 
-- Go to http://localhost:8888/login
+- http://localhost:8888/login
 => This part is to view an account's playlists.
 
 Client ID and secret can be obtained here: https://developer.spotify.com/dashboard/login
