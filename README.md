@@ -1,6 +1,4 @@
-**To start app:**
-
-```cd spotify-search```
+**To start client:**
 
 ```npm install```
 
