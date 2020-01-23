@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { FormGroup, FormControl, InputGroup, Glyphicon } from 'react-bootstrap';
-import Artist from './Artist';
-import Albums from './Albums';
+import Artist from './components/Artist';
+import Albums from './components/Albums';
 import logo from './logo.png';
 
 // declare empty props
