@@ -25,7 +25,6 @@ class Albums extends Component {
                         </div>
                         <div className="tracks">    
                             <Tracks 
-// Pass album id to Tracks component to fetch tracks
                                 albumId = {album.id}
                             />
                         </div>
