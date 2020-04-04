@@ -4,13 +4,12 @@ import Tracks from 'Tracks';
 class Albums extends Component {
 
     render() {
-// declare empty array of objects
         let albums = { id: '', name: '', release_date:'', external_uls: [{ spotify: '' }], images: [{ url: '' }]};
 
-// if the albums prop isn't empty, assign the data from state to the albums array
+
         albums = this.props.albums !== [] ? this.props.albums : albums;
 
-// map on each object to display every album
+
         const listItems = albums.map((album) =>
                 <li>
                     <div className="cover">
